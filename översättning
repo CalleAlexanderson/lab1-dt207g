@@ -1,0 +1,5 @@
+Student[studentID(PK), Fname, Lname]
+
+Course[courseID(PK), courseName, Progression, Syllabus]
+
+CompletedCouse[studentID(PK, FK), courseID(PK, FK)]
