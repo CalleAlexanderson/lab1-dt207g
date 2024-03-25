@@ -48,14 +48,34 @@ body {
       position: fixed;
       width: 100%;
       height: 100%;
-      background-color: red;
+      background-color: white;
       z-index: 0;
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        list-style: none;
+        li {
+          margin: 20px auto;
+          text-align: center;
+          width: 120px;
+          padding: 5px;
+          font-size: 1.2rem;
+          border: 1px solid black;
+          a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: black;
+          }
+        }
+      }
     }
   }
 }
 
 .currentSite {
-  border: 2px solid black;
+  background-color: lightblue;
 }
 
 @media screen and (max-width: 400px) {
@@ -97,6 +117,12 @@ body {
           li {
             padding: 5px;
             font-size: 1.2rem;
+            a {
+              color: black;
+            }
+            a:hover{
+              color: darkcyan;
+            }
           }
         }
       }
@@ -109,5 +135,11 @@ body {
         visibility: hidden;
       }
     }
+  }
+
+  .currentSite {
+    background-color: initial;
+    border: 2px solid black;
+    margin-top: -2px;
   }
 }
